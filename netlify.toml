@@ -1,0 +1,6 @@
+# Used only if this repository is connected to Netlify (Add new site > Import from Git).
+# The build copies the site into netlify-deploy/ and leaves out CLAUDE.md, partials/ and tools/,
+# and adds the noindex headers for staging. Drag-and-drop deploys ignore this file.
+[build]
+  command = "node tools/build-netlify.js"
+  publish = "netlify-deploy"
